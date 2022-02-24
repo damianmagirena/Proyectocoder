@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: rgba(255, 166, 0, 0.719);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.navegador {
+   display: flex;
+   list-style: none;
+   
+      
+}
+.navegador li a{
+   padding: 8px;
+   font-size: 20px;
+   font-family: initial;
+   text-decoration: none;
+   color: white;
+   transition: all 1s;
+}
+.navegador li :hover {
+    background-color: rgba(156, 36, 0, 0.753);
+}
+.portada__index {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.titulo1 {
+    text-align: center;
+}
+h1 {
+    opacity: 0.75;
+    font-family: josefin sans, sans-serif;
+    text-align: center;
+    padding: 2rem;
+    font-size: 500%;
+    font-weight: bold;
+}
+.tituloAnimacion {
+    animation: tada; 
+    animation-duration: 4s;
+}
+.subtitulo {
+    animation: rubberBand; 
+    animation-duration: 4s;
+}
+.parrafo {
+    color: rgb(49, 4, 4);
+    padding-top: 2rem;
+    padding-bottom: 7rem;
+    font-size: 250%;
+    text-align: center;
+    animation: heartBeat; 
+    animation-duration: 4s;
+}
+
+.imagenes {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    height: 100%;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    
+    
+}
+.card {
+background-color: grey;
+padding: 1rem;
+}
+
+.imagen {
+   width: 300px;
+   height: 300px;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 1rem;
+   display: inline-block; 
+   font-size: 50px; 
+   
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.quienesSomos {
+    background-image: url(../imagenes/fondoquienes\ somos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.quienesSomosTitulo{
+    opacity: 0.65;
+}
+.parrafo {
+    font-size: 150%;
+    font-style: oblique;
+    font-weight: bold;
+    padding-bottom: 5%;
+}
+.galeria {
+    color: indigo;
+    text-align: center;
+    font-size: 400%;
+    padding-bottom: 20rem;
+}
+.tituloVariedades {
+    color: white;
+    opacity: 0.65;
+}
+.variedades {
+    background-image: url(../imagenes/foto4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.listaVariedades {
+    list-style: none;
+    font-size: 200%;
+    font-style: italic;
+    color: white;
+}
+.sectionHorarios {
+    background-image: url(../imagenes/foto10.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.horariosTitulo {
+    opacity: 0.75;
+    font-size: 7rem;
+    color: white;
+}
+.tabla1 {  
+    background-color: black;
+    opacity: 0.55;
+    color: white;
+    font-size: 150%;
+    border: 5px solid rebeccapurple;
+    padding: 3rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%;
+    text-align: center;
+}
+.listaHorarios {
+    list-style: none;
+}
+.tituloContacto {
+    padding-top: 5rem;
+}
+.fondoContacto {
+    background-image: url(../imagenes/foto6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1300px;
+}
+.formulario {
+    font-size: 150%;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    width: 400px;
+    font-weight: bold;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.432);
+    border-style: none;
+}
+.formulario1{
+    border: 0;
+}
+.boton1 {
+    background: linear-gradient(to right, rgb(250, 250, 250), rgba(180, 11, 11, 0.397));
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    border: none;
+    border-radius: 50rem;
+    cursor: pointer;
+    transition: all 1s;
+    
+    
+}
+.boton :hover {
+    background-color: rgb(209, 12, 12);
+    
+}
+.boton2 {
+    background: linear-gradient(to right, rgb(250, 250, 250), rgba(180, 11, 11, 0.397));
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    border: none;
+    border-radius: 50rem;
+    cursor: pointer;
+    transition: all 1s;
+}
+.whatsapp :hover{ 
+    opacity: 0.65;
+    transition: 1s;
+}    
+.whatsapp {  
+    position: fixed;
+    padding-bottom: 10px;
+    animation-name: animacionwsp;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.whatsapp a{
+    
+    color: green;
+    font-size: 200%;
+    
+}
+@keyframes animacionwsp {
+    0%{
+        color: green;
+        transform: translatex(0);
+    }
+    100%{
+        color: black;
+        transform: translatex(1000%);
+    }
+    
+      
+}
+footer {
+    background: linear-gradient(to top, rgb(66, 3, 3), rgb(77, 76, 76));
+}
+.cajasFooter {
+   display: flex;
+   justify-content: space-around;
+   padding-top: 3rem;
+   padding-bottom: 3rem;
+}
+.listadoFooter li{
+    list-style: none;
+} 
+.listadoFooter li a {
+    text-decoration: none;
+    font-family: initial;
+    color: rgb(187, 50, 0);
+    font-size: 20px;
+    transition: all 1s;
+}
+
+.listadoFooter li :hover{
+    opacity: 0.65;
+    color: rgb(51, 1, 1);
+}
+.seguinos {
+    display: flex;
+    justify-content: center;
+    color: rgb(133, 133, 133);
+    padding-bottom: 2rem;
+}
+.redes {
+    display: flex;
+    justify-content: center;
+}
+.redes1 a{
+    font-size: 300%;
+    text-decoration: none;
+    color: rgb(113, 70, 161);
+    }
+.redes2 {
+    margin-right: 3rem ;
+}
+.copyright {
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-size: 100%;
+    color: blanchedalmond;
+}
+
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+}
+.grid__box {
+    max-width: 320px;
+    margin: 1rem;
+}
+.box__img {
+    width: 100%;
+}
+.box__title {
+    text-align: center;
+}
