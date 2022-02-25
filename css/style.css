@@ -14,12 +14,17 @@ header {
     
     
 }
-
+.portadaIndex {
+    min-height: 100vh;
+    width: 100%;
+}
 .navegador {
    display: flex;
    list-style: none;
-   
-      
+}
+.tituloIndex {
+    place-items: center;
+    
 }
 .navegador li a{
    padding: 8px;
@@ -81,7 +86,7 @@ h1 {
     
     
 }
-.card {
+.card1 {
 background-color: grey;
 padding: 1rem;
 }
@@ -96,7 +101,7 @@ padding: 1rem;
    font-size: 50px; 
    
 }
-.container {
+.container1 {
     width: 100%;
     margin: 0 auto;
     max-width: 1200px;
@@ -246,19 +251,19 @@ padding: 1rem;
     
       
 }
-footer {
+footer1 {
     background: linear-gradient(to top, rgb(66, 3, 3), rgb(77, 76, 76));
 }
-.cajasFooter {
+.cajasFooter1 {
    display: flex;
    justify-content: space-around;
    padding-top: 3rem;
    padding-bottom: 3rem;
 }
-.listadoFooter li{
+.listadoFooter1 li{
     list-style: none;
 } 
-.listadoFooter li a {
+.listadoFooter1 li a {
     text-decoration: none;
     font-family: initial;
     color: rgb(187, 50, 0);
@@ -266,29 +271,29 @@ footer {
     transition: all 1s;
 }
 
-.listadoFooter li :hover{
+.listadoFooter1 li :hover{
     opacity: 0.65;
     color: rgb(51, 1, 1);
 }
-.seguinos {
+.seguinos1 {
     display: flex;
     justify-content: center;
     color: rgb(133, 133, 133);
     padding-bottom: 2rem;
 }
-.redes {
+.redes1 {
     display: flex;
     justify-content: center;
 }
-.redes1 a{
+.redes11 a{
     font-size: 300%;
     text-decoration: none;
     color: rgb(113, 70, 161);
     }
-.redes2 {
+.redes21 {
     margin-right: 3rem ;
 }
-.copyright {
+.copyright1 {
     display: flex;
     justify-content: center;
     padding-top: 3rem;
